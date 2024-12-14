@@ -18,7 +18,6 @@ sphinx:
       exclude_patterns: ["**/_*.yml", "**/*.md", "**/*.ipynb"]
     html_theme_options:
       logo:
-        text: Augustinianum
         image_light: figures/AUG-logo.png # 
         image_dark: figures/AUG-logo.png # niet nodig om te inverter
       repository_url: "https://github.com/AUG-natuurkunde/aug-template" #uitgeschakeld, dus maakt niet uit
