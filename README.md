@@ -1,38 +1,35 @@
-# Your first TeachBook using the GitHub template
+# Welkom bij het TeachBooks template voor het Augustinianum
 
 [![call-deploy-book](https://github.com/TeachBooks/template/actions/workflows/call-deploy-book.yml/badge.svg)](https://github.com/TeachBooks/template/actions/workflows/call-deploy-book.yml)
 
-The template allows you to start your own TeachBook and hosting that TeachBook online without knowledge on Git, the Jupyter book package, python or anaconda. It doesn't elaborate on the collaborative functionalities of Git or how to edit the book. Please look at our manual (https://teachbooks.io/manual) to find more about that!
+Met dit template heb je automatisch alle opmaak en paketten om je eigen boek te schrijven.
+Het gehele boek wordt automatisch aangemaakt, er zijn slechts enkele stappen nodig om dit werkend te krijgen.
 
-## How to get started
-
-How to use the template is demonstrated in the figure below, all steps are elaborated on in the following step-by-step tutorial.
+## Hoe maak ik mijn eigen boek?
 
 ![Demonstration for a public repository](figures/teachbooks-template.gif)
-Video available [here](https://youtu.be/nN3Oi_MVvF0)
+Video beschikbaar [hier](https://youtu.be/nN3Oi_MVvF0)
 
 
-1. To get started making your TeachBook with our functionalities, use the [template TeachBook](https://github.com/TeachBooks/template) as template:
+1. Om te starten met het maken van een eigen boek, kan je het beste beginnen met het maken van een kopie van dit template:
 
-![Use template](figures/use_template.png)
+![Template gebruiken](figures/use_template.png)
 
-2. Fill in a repository name, this name will be used in the future url of your book:
+1. Kies een naam voor de 'repository'. Dit is ook de naam van je boek.
 
-![Create new repository](figures/create_new_repository.png)
+![Nieuwe repository aanmaken](figures/create_new_repository.png)
 
-3. You can choose for `Private` only if you've GitHub Pro, GitHub Team, GitHub Enterprise Cloud, or GitHub Enterprise Server. Otherwise, you won't be able to publish your TeachBook online.
+1. Kies voor 'public'
 
-4. (Only required for private repositories:) Create a Personal Access Token (classic) with at least the scopes `repo`, `read:org` and `gist` as described in the [github documentation](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens), and add this token with the name `GH_PAT` as a `Repository secret` or `Organization secret` (`Settings` > `Secrets and variables` > `Actions` > `Repository secrets` or `Organization secrets`).
-
-5. You need to activate GitHub pages so that your website is published to the internet. As long as you don't do this your TeachBook is not published online. Actually, now that you've taken this template our workflow tries to publish it to GitHub pages, which you didn't have the chance to activate yet. That's why you probably received an email with 'call-deploy-book: Some jobs were not successful' and you see the failed job under `Initial commit`. You can activate GitHub pages by setting the source for GitHub pages to GitHub Actions under `Settings` - `Pages` - `Build and deployment` - `Source` - `GitHub Actions`:
+2. You need to activate GitHub pages so that your website is published to the internet. As long as you don't do this your TeachBook is not published online. Actually, now that you've taken this template our workflow tries to publish it to GitHub pages, which you didn't have the chance to activate yet. That's why you probably received an email with 'call-deploy-book: Some jobs were not successful' and you see the failed job under `Initial commit`. You can activate GitHub pages by setting the source for GitHub pages to GitHub Actions under `Settings` - `Pages` - `Build and deployment` - `Source` - `GitHub Actions`:
 
 ![Activate GitHub Pages](figures/set_up_pages.png)
 
-6. Make an edit to the TeachBook by editing and committing changes to one of the files in the `book/` subdirectory (available under `Code`).  Now checkout the progress of the publishing workflow under `Actions` - `All workflows` -  `call-deploy-book` -`<the most recent workflow run>`. Remember, the first commit which is there has failed because GitHub Pages wasn't activated at the time of `Initial commit`, you could also re-run that job if you don't want to make an edit. You can do so by running the workflow from `Actions` - `All workflows` - `call-deploy-book` - `Initial commit` - `Re-run all jobs` - `Re-run jobs`:
+5. Make an edit to the TeachBook by editing and committing changes to one of the files in the `book/` subdirectory (available under `Code`).  Now checkout the progress of the publishing workflow under `Actions` - `All workflows` -  `call-deploy-book` -`<the most recent workflow run>`. Remember, the first commit which is there has failed because GitHub Pages wasn't activated at the time of `Initial commit`, you could also re-run that job if you don't want to make an edit. You can do so by running the workflow from `Actions` - `All workflows` - `call-deploy-book` - `Initial commit` - `Re-run all jobs` - `Re-run jobs`:
 
 ![Action](figures/action_re-run.jpeg)
 
-7. When the workflow has finished, visit your build TeachBook at `https://<username or organiszation_name>.github.io/<repository_name>` (case sensitive). For our example it is [https://dummydocent.github.io/test_book_from_template/](https://dummydocent.github.io/test_book_from_template/) for the shown repository. These links are visible in the action's summary as well, as shown in the figure of step 4.
+6. When the workflow has finished, visit your build TeachBook at `https://<username or organiszation_name>.github.io/<repository_name>` (case sensitive). For our example it is [https://dummydocent.github.io/test_book_from_template/](https://dummydocent.github.io/test_book_from_template/) for the shown repository. These links are visible in the action's summary as well, as shown in the figure of step 4.
 
 Additional tip: 
 Set the repository website as your GitHub Pages website under `Code`- `About` - `Settings icon` - `Website` - `Use your GitHub Pages Website`
@@ -53,5 +50,5 @@ Set the repository website as your GitHub Pages website under `Code`- `About` - 
 - A gitignore file containing standard python filetype to ignore (`.gitignore`)
 - A readme containing information how to use the template, which can adjusted after using the template (`README.md`)
 
-## Contribute
-This tool's repository is stored on [GitHub](https://github.com/TeachBooks/template). The `README.md` of the branch `manual_description` is also part of the [TeachBooks manual](https://teachbooks.io/manual/external/template/README.html) as a submodule. If you'd like to contribute, you can create a fork and open a pull request on the [GitHub repository](https://github.com/TeachBooks/template). To update the `README.md` shown in the TeachBooks manual, create a fork and open a merge request for the [GitHub repository of the manual](https://github.com/TeachBooks/manual). If you intent to clone the manual including its submodules, clone using: `git clone --recurse-submodulesgit@github.com:TeachBooks/manual.git`.
+## Vragen
+Voor vragen over het gebruik van TeachBooks of over het Template graag mailen naar [G.Dohmen@augustinianum.nl](mailto:g.dohmen@augustinianum.nl).
