@@ -10,18 +10,21 @@ Het gehele boek wordt automatisch aangemaakt, er zijn slechts enkele stappen nod
 ![Demonstration for a public repository](figures/teachbooks-template.gif)
 Video beschikbaar [hier](https://youtu.be/nN3Oi_MVvF0)
 
-
 1. Om te starten met het maken van een eigen boek, kan je het beste beginnen met het maken van een kopie van dit template:
 
 ![Template gebruiken](figures/use_template.png)
 
-1. Kies een naam voor de 'repository'. Dit is ook de naam van je boek.
+2. Kies een naam voor de 'repository'. Dit is ook de naam van je boek.
 
 ![Nieuwe repository aanmaken](figures/create_new_repository.png)
 
-1. Kies voor 'public'
 
-2. You need to activate GitHub pages so that your website is published to the internet. As long as you don't do this your TeachBook is not published online. Actually, now that you've taken this template our workflow tries to publish it to GitHub pages, which you didn't have the chance to activate yet. That's why you probably received an email with 'call-deploy-book: Some jobs were not successful' and you see the failed job under `Initial commit`. You can activate GitHub pages by setting the source for GitHub pages to GitHub Actions under `Settings` - `Pages` - `Build and deployment` - `Source` - `GitHub Actions`:
+3. Kies voor 'public'
+
+
+
+4. You need to activate GitHub pages so that your website is published to the internet. As long as you don't do this your TeachBook is not published online. Actually, now that you've taken this template our workflow tries to publish it to GitHub pages, which you didn't have the chance to activate yet. That's why you probably received an email with 'call-deploy-book: Some jobs were not successful' and you see the failed job under `Initial commit`. You can activate GitHub pages by setting the source for GitHub pages to GitHub Actions under `Settings` - `Pages` - `Build and deployment` - `Source` - `GitHub Actions`:
+
 
 ![Activate GitHub Pages](figures/set_up_pages.png)
 
@@ -31,12 +34,13 @@ Video beschikbaar [hier](https://youtu.be/nN3Oi_MVvF0)
 
 6. When the workflow has finished, visit your build TeachBook at `https://<username or organiszation_name>.github.io/<repository_name>` (case sensitive). For our example it is [https://dummydocent.github.io/test_book_from_template/](https://dummydocent.github.io/test_book_from_template/) for the shown repository. These links are visible in the action's summary as well, as shown in the figure of step 4.
 
-Additional tip: 
-Set the repository website as your GitHub Pages website under `Code`- `About` - `Settings icon` - `Website` - `Use your GitHub Pages Website`
+*Extra tip*:
+Zet de website voor deze repository gelijk aan de GitHub Pages website via `Code`- `About` - `Settings icon` - `Website` - `Use your GitHub Pages Website`
 
 ![GitHub pages as website](figures/use_github_pages_website.png)
 
 ## Features
+
 - A github repository structure for making a [Jupyter Book](https://github.com/executablebooks/jupyter-book) (`/book`)
 - An empty TeachBook containing an intro page on root, an example markdown page, an example jupyter notebook page, an example references page. and an example credits page. (`/book/_toc.yml`, `/book/_config.yml`, `/book/credits.md`, `/book/intro.md`, `/book/references.md`, `/book/some_content/overview.md`, `/book/some_content/text_and_code.ipynb`)
 - A file ready for adding references (`references.bib`, `/book/references.md`)
@@ -51,4 +55,5 @@ Set the repository website as your GitHub Pages website under `Code`- `About` - 
 - A readme containing information how to use the template, which can adjusted after using the template (`README.md`)
 
 ## Vragen
+
 Voor vragen over het gebruik van TeachBooks of over het Template graag mailen naar [G.Dohmen@augustinianum.nl](mailto:g.dohmen@augustinianum.nl).
