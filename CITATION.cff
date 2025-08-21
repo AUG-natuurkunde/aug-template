@@ -40,12 +40,12 @@ preferred-citation:
     - 'Jupyter Book'
   title: 'TeachBooks Template' # replace with your own book title when you use this template
   institution:
-    name: 'TeachBooks' # replace with your own institution when you use this template
+    name: 'Augustinianum' # replace with your own institution when you use this template
   license: CC-BY-4.0
   license-url: 'https://creativecommons.org/licenses/by/4.0/'
   copyright: '© 2025 TeachBooks' # replace with your own affiliation / name when you use this template
   languages:
     - en # replace with your book language when you use this template
   contact: # replace with your own contact information when you use this template
-  - email: info@teachbooks.io
-    name: 'TeachBooks Development Team'
+  - email: g.dohmen@Augustinianum.ml
+    name: 'Guus Dohmen'
